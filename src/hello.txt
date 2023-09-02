@@ -1,1 +1,12 @@
-hello
+ git init
+ git add .
+  git commit -am "initiallizing"
+  git config --global user.name "iamabdur"
+  git remote
+  git branch -M deepak
+  git remote add url https://github.com/iamabdur/crude.git
+   git remote
+   git status
+   git branch -M deepak
+   git branch -a
+   git checkout deepak
