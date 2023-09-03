@@ -1,14 +1,21 @@
-import './App.css'
-import UserForm from './Component/UserForm'
-// import UserTable from './Component/UserTable'
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Login from './Component/Login.jsx';
+import UserForm from './Component/UserForm.jsx';  
 function App() {
   
 
   return ( 
+    
     <>
-      <UserForm/>
-      
+    <Router>
+      <Switch>
+        <Route path="/signup" component={UserForm} />
+        <Route path="/" component={Login} />
+      </Switch>
+    </Router>
     </>
+    
   )
 }
 
